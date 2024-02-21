@@ -5,7 +5,7 @@ const RatingStars = ({ initialRating, onRatingChange,id }) => {
   const [rating, setRating] = useState(initialRating );
   const ratefun=async(clickedRating)=>{
     await console.log(clickedRating)
-    const response = await fetch(`http://localhost:5000/api/folio/rate/${id}`, {
+    const response = await fetch(`https://portfolio-princedigra786.vercel.app/api/folio/rate/${id}`, {
       method: "PUT", // *GET, POST, PUT, DELETE, etc.
       headers: {
           "Content-Type": "application/json",
