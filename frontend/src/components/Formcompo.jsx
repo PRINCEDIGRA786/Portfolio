@@ -135,7 +135,7 @@ const FormComponent = () => {
                 <div className='text-white font-extrabold md:text-xl'>PORTFOLIO.com</div>
                 <div className={`hamburger m-1 inline-block
                  cursor-pointer  text-end sm:hidden 
-                    pr-1 absolute pl-[82%] sm:${open}?${togglestyle}:""`} onClick={togglestyle}>
+                    pr-1 absolute pl-[82%] phone:pl-[70%] sm:${open}?${togglestyle}:""`} onClick={togglestyle}>
                     <div className="line h-0.5 w-5 my-1 bg-white"></div>
                     <div className="line h-0.5 w-5 my-1 bg-white"></div>
                     <div className="line h-0.5 w-5 my-1 bg-white"></div>
@@ -158,15 +158,15 @@ const FormComponent = () => {
                 </ul>
                     </div>
             </div>
-    <div className="container  p-4  ">
-      <form className=" mx-auto 
-      bg-gradient-to-br w-[70vw] lg:w-[80%] phone:w-52 sm:w-[60%]
-     to-[#00030dfe] from-[#0db5d6e0] p-8 rounded-md shadow-md">
+    <div className="container  p-4   ">
+      <form className=" mx-auto phone:mx-0
+      bg-gradient-to-br w-[70vw] lg:w-[80%] phone:w-[80vw] sm:w-[60%]
+     to-[#00030dfe] from-[#0db5d6e0] p-8 phone:p-4 rounded-md shadow-md">
        <div className='my-4'>
-        <h1 className=' font-extrabold my-2 text-slate-600'>Choose your profile pic:</h1>
+        <h1 className=' font-extrabold my-2 phone:text-xs text-md text-slate-600'>Choose your profile pic:</h1>
         {/* <img src='https://www.business2community.com/wp-content/uploads/2015/03/Identity-Question-Mark5.jpg5.jpg' 
         className='h-40 w-40 mx-auto rounded-full z-50'/> */}
-        <div className='flex space-x-3'>
+        <div className='flex space-x-3 phone:flex-col space-y-0 phone:space-y-2'>
 
         <input
           type="file"
