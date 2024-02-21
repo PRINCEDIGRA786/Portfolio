@@ -11,7 +11,7 @@ import { FaUserAlt } from 'react-icons/fa';
 import {PiSignOutBold} from 'react-icons/pi'
 export default function Home() {
     const context=useContext(Portcon)
-    const{user,dashboard,getuser,name,dumcreateuser}=context;
+    const{user,dashboard,getuser,name}=context;
     const navigate=useNavigate();
     
     useEffect(()=>{
@@ -23,7 +23,7 @@ export default function Home() {
             dashboard();
 
         }
-        // dumcreateuser();
+      
     },[])
 
     const[open,setopen]=useState(false)
